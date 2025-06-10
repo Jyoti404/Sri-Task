@@ -4,6 +4,8 @@ import { Link, NavLink } from "react-router-dom";
 import { useAuth } from "../../../Context/auth";
 import toast from "react-hot-toast";
 import { useCart } from "../../../Context/cart";
+import { HeartIcon } from "@heroicons/react/24/outline";
+import { useWishlist } from "../../../Context/wishlist";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -15,6 +17,7 @@ const Navbar = () => {
   const dropdownRef = useRef(null);
   const { auth, setAuth } = useAuth();
   const { cart } = useCart();
+  const { wishlist } = useWishlist();
 
   const handleLogout = () => {
     setAuth({
@@ -71,13 +74,11 @@ const Navbar = () => {
   return (
     <nav
       ref={navbarRef}
-      className={`bg-white backdrop-blur-md bg-opacity-80 p-4 shadow-sm transition-all duration-300 ease-in-out transform ${
-        isSticky
-          ? `${
-              isVisible ? "translate-y-0" : "-translate-y-full"
-            } fixed top-0 left-0 w-full z-50`
+      className={`bg-white backdrop-blur-md bg-opacity-80 p-4 shadow-sm transition-all duration-300 ease-in-out transform ${isSticky
+          ? `${isVisible ? "translate-y-0" : "-translate-y-full"
+          } fixed top-0 left-0 w-full z-50`
           : "relative z-50"
-      }`}
+        }`}
     >
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="flex items-center space-x-2">
@@ -92,10 +93,9 @@ const Navbar = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `text-sm font-medium transition-colors duration-200 ${
-                  isActive
-                    ? "text-black-800"
-                    : "text-gray-600 hover:text-gray-900"
+                `text-sm font-medium transition-colors duration-200 ${isActive
+                  ? "text-black-800"
+                  : "text-gray-600 hover:text-gray-900"
                 }`
               }
             >
@@ -134,10 +134,9 @@ const Navbar = () => {
             <NavLink
               to="/store"
               className={({ isActive }) =>
-                `text-sm font-medium transition-colors duration-200 ${
-                  isActive
-                    ?  "text-black-800"
-                    : "text-gray-600 hover:text-gray-900"
+                `text-sm font-medium transition-colors duration-200 ${isActive
+                  ? "text-black-800"
+                  : "text-gray-600 hover:text-gray-900"
                 }`
               }
             >
@@ -148,10 +147,9 @@ const Navbar = () => {
             <NavLink
               to="/cartpage"
               className={({ isActive }) =>
-                `flex items-center space-x-1 text-sm font-medium transition-colors duration-200 ${
-                  isActive
-                    ? "text-black-800"
-                    : "text-gray-600 hover:text-gray-900"
+                `flex items-center space-x-1 text-sm font-medium transition-colors duration-200 ${isActive
+                  ? "text-black-800"
+                  : "text-gray-600 hover:text-gray-900"
                 }`
               }
             >
@@ -161,6 +159,23 @@ const Navbar = () => {
               </span>
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/wishlistpage"
+              className={({ isActive }) =>
+                `flex items-center space-x-1 text-sm font-medium transition-colors duration-200 ${isActive
+                  ? "text-black-800"
+                  : "text-gray-600 hover:text-gray-900"
+                }`
+              }
+            >
+              <HeartIcon className="h-5 w-5" />
+              <span className="bg-pink-600 text-white rounded-full px-2 py-0.5 text-xs">
+                {wishlist?.length || 0}
+              </span>
+            </NavLink>
+          </li>
+
 
           {!auth.user ? (
             <li>
@@ -308,10 +323,9 @@ const Navbar = () => {
                 <NavLink
                   to="/cartpage"
                   className={({ isActive }) =>
-                    `flex items-center space-x-1 text-sm font-medium transition-colors duration-200 ${
-                      isActive
-                        ? "text-blue-600"
-                        : "text-gray-700 hover:text-blue-600"
+                    `flex items-center space-x-1 text-sm font-medium transition-colors duration-200 ${isActive
+                      ? "text-blue-600"
+                      : "text-gray-700 hover:text-blue-600"
                     }`
                   }
                 >
