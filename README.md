@@ -1,44 +1,108 @@
 # Sri Task App
 
-A responsive and user-friendly web application built with modern frontend technologies.  
+A full-stack web application with role-based access for **Admin** and **User** roles.  
 Live Demo: [sri-task.vercel.app](https://sri-task.vercel.app/)
 
 ## 🚀 Features
 
-- Clean and intuitive UI
-- Fully responsive design
-- Role-based access with two types of users:
-  - **User:** Can perform specific allowed tasks
-  - Email-> uk@gmail.com Password -> uk1234
-  - **Admin:** Has extended privileges for managing the application
-  - Email -> admin@gmail.com Password -> admin1234
-- Fast and optimized performance
-- Deployed globally via Vercel
+- 💼 **Admin Dashboard** with extended access
+- 👤 **User Panel** for individual users
+- 🧾 Task management functionality (create, update, delete)
+- 🔐 Role-based authentication & authorization
+- ⚡ Fast and responsive UI using Vite + Tailwind CSS
+- 🌍 Deployed on **Vercel**
 
-## 🧑‍💻 User Roles
+## 👥 User Roles
 
 ### 👤 User
-- Can log in to the platform
-- Access user-specific dashboard and functionality
+- Can log in and view their dashboard
+- Access features permitted to regular users
+Email ->uk@gmail.com
+Password -> uk1234
 
 ### 🛡️ Admin
-- Has access to admin panel/dashboard
-- Can manage users or perform elevated tasks *(based on project’s actual features)*
+- Full access to the system
+- Can manage tasks and users
+- Admin dashboard with extra controls
+Email ->admin@gmail.com
+Password ->admin1234
 
-> If authentication is required, credentials should be configured or requested.
+## 📁 Project Structure
 
-## 🛠 Tech Stack
+```
+Sri-Task/
+│
+├── Frontend-master/           # Frontend built with Vite
+│   ├── public/                # Static assets
+│   ├── src/                   # Main React source code
+│   ├── index.html             # HTML template
+│   ├── tailwind.config.js     # Tailwind configuration
+│   ├── vite.config.js         # Vite configuration
+│   ├── vercel.json            # Vercel config for frontend
+│
+├── server/                    # Backend built with Node.js + Express
+│   ├── config/                # DB and env config
+│   ├── controllers/           # Route handlers
+│   ├── helpers/               # Utility functions
+│   ├── middleware/            # Authentication & other middleware
+│   ├── models/                # Mongoose models
+│   ├── routes/                # Express route definitions
+│   ├── server.js              # Main server entry point
+│   ├── vercel.json            # Vercel config for backend
+│
+├── README.md                  # You're reading it!
+```
 
-- **Framework:** React.js / Next.js *(update as appropriate)*
-- **Styling:** Tailwind CSS / CSS Modules / MUI *(update accordingly)*
-- **Hosting:** Vercel
+## ⚙️ Setup & Installation
 
-## 📦 Installation & Development
+### Prerequisites
 
-Clone the repository and run the project locally:
+- Node.js ≥ 14
+- npm or yarn
+- MongoDB instance (local or cloud)
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/your-username/sri-task.git
 cd sri-task
+```
+
+### 2. Setup Backend
+
+```bash
+cd server
+npm install
+cp .env.example .env   # Add MongoDB URI and other env variables
+npm run dev
+```
+
+### 3. Setup Frontend
+
+```bash
+cd ../Frontend-master
 npm install
 npm run dev
+```
+
+The frontend should now be running at `http://localhost:5173`  
+The backend API should be running at `http://localhost:5000`
+
+## 🌐 Deployment
+
+Both the frontend and backend are deployed using **Vercel**.  
+Ensure your `vercel.json` in both directories is correctly configured for routing and build.
+
+## 📄 License
+
+MIT License
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+### 👩‍💻 Developed by [Your Name]
+
+If you like this project, don't forget to ⭐ the repo!
