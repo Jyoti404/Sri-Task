@@ -1,0 +1,94 @@
+.modern-account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/Image/dronebg.jpg') no-repeat center center/cover;
+  font-family: 'Arial', sans-serif;
+}
+
+.modern-account-card {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  text-align: center;
+}
+
+.modern-account-card h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.modern-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.modern-input-container {
+  margin-bottom: 1rem;
+}
+
+.modern-input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.modern-input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.modern-icon {
+  margin-right: 0.5rem;
+  color: #333;
+}
+
+.modern-icon-eye {
+  cursor: pointer;
+  color: #333;
+}
+
+.modern-submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #333;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modern-submit-button:hover {
+  background: #555;
+}
+
+
+/* Styling for the login prompt and button */
+.modern-login-prompt {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.modern-login-prompt a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.modern-login-prompt a:hover {
+  color: #555;
+}

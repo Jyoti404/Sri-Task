@@ -1,0 +1,132 @@
+/* Modern Login Page Styles */
+.modern-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f8ff, #dbeafe);
+  font-family: 'Poppins', sans-serif;
+}
+
+.modern-login-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #1a202c;
+  margin-bottom: 10px;
+}
+
+.modern-subtitle {
+  font-size: 0.9rem;
+  color: #718096;
+  margin-bottom: 30px;
+}
+
+.modern-input-container {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.modern-input-container label {
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.modern-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.modern-input-wrapper input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding-left: 10px;
+  font-size: 0.9rem;
+  color: #2d3748;
+}
+
+.modern-input-wrapper input::placeholder {
+  color: #a0aec0;
+}
+
+.modern-icon {
+  color: #4a5568;
+}
+
+.modern-icon-eye {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #4a5568;
+}
+
+.modern-submit-button {
+  width: 100%;
+  background: linear-gradient(90deg, #4f46e5, #3b82f6);
+  color: #ffffff;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modern-submit-button:hover {
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+}
+
+.modern-footer-text {
+  font-size: 0.8rem;
+  color: #4a5568;
+  margin-top: 20px;
+}
+
+.modern-link {
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.modern-link:hover {
+  text-decoration: underline;
+}
+
+.modern-message {
+  color: #e53e3e;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+.password-advice {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  color: #718096;
+  list-style: none;
+  padding: 0;
+}
+
+.password-advice li {
+  margin-bottom: 5px;
+}
+
+.password-advice li.valid {
+  color: #38a169; /* Green for valid criteria */
+  font-weight: 600;
+}
