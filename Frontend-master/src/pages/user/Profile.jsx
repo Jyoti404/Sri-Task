@@ -102,7 +102,7 @@ const Profile = () => {
               setEditingField(field);
               setShowEditModal(true);
             }}
-            className="text-blue-500 hover:text-blue-600 flex items-center gap-1 text-sm"
+            className="text-pink-500 hover:text-pink-600 flex items-center gap-1 text-sm"
           >
             <FaEdit /> Edit
           </button>
@@ -117,10 +117,10 @@ const Profile = () => {
       <div className="min-h-screen bg-gray-50 py-8">
         <div className="max-w-6xl mx-auto px-4">
           <div className="bg-white rounded-2xl shadow-md overflow-hidden">
-            <div className="bg-gradient-to-r from-blue-500 to-blue-600 p-6">
+            <div className="bg-gradient-to-r from-pink-500 to-pink-600 p-6">
               <div className="flex items-center gap-3">
                 <div className="bg-white p-3 rounded-full">
-                  <FaUser className="text-blue-500 text-xl" />
+                  <FaUser className="text-pink-500 text-xl" />
                 </div>
                 <h1 className="text-2xl font-bold text-white">
                   Profile Details
@@ -161,7 +161,7 @@ const Profile = () => {
       {showEditModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-xl max-w-md w-full mx-4 shadow-xl">
-            <div className="bg-gradient-to-r from-blue-500 to-blue-600 p-4 rounded-t-xl flex justify-between items-center">
+            <div className="bg-gradient-to-r from-pink-500 to-pink-600 p-4 rounded-t-xl flex justify-between items-center">
               <h3 className="text-xl font-semibold text-white">
                 Edit{" "}
                 {editingField.charAt(0).toUpperCase() + editingField.slice(1)}
@@ -181,7 +181,7 @@ const Profile = () => {
                     name={editingField}
                     value={formData[editingField]}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                     rows="3"
                     required
                   />
@@ -191,7 +191,7 @@ const Profile = () => {
                     name={editingField}
                     value={formData[editingField]}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                     required
                   />
                 )}
@@ -208,7 +208,7 @@ const Profile = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors flex items-center gap-2"
+                  className="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors flex items-center gap-2"
                 >
                   {loading ? (
                     <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />

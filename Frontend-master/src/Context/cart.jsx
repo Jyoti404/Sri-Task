@@ -7,7 +7,7 @@ const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    const existingCart = localStorage.getItem("Flytium");
+    const existingCart = localStorage.getItem("STYHERE");
     if (existingCart) {
       try {
         const parsedCart = JSON.parse(existingCart);
@@ -17,7 +17,7 @@ const CartProvider = ({ children }) => {
         })));
       } catch (error) {
         console.error("Error parsing cart:", error);
-        localStorage.removeItem("Flytium");
+        localStorage.removeItem("STYHERE");
       }
     }
   }, []);

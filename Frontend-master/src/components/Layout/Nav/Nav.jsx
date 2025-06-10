@@ -83,7 +83,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="flex items-center space-x-2">
           <img src="/logo.png" alt="Logo" className="h-16 w-auto" />
-          <span className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <span className="text-4xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
             STYHERE
           </span>
         </div>
@@ -108,8 +108,8 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `text-sm font-medium transition-colors duration-200 ${
                   isActive
-                    ? "text-blue-600"
-                    : "text-gray-700 hover:text-blue-600"
+                    ? "text-pink-600"
+                    : "text-gray-700 hover:text-pink-600"
                 }`
               }
             >
@@ -122,8 +122,8 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `text-sm font-medium transition-colors duration-200 ${
                   isActive
-                    ? "text-blue-600"
-                    : "text-gray-700 hover:text-blue-600"
+                    ? "text-pink-600"
+                    : "text-gray-700 hover:text-pink-600"
                 }`
               }
             >
@@ -154,7 +154,7 @@ const Navbar = () => {
               }
             >
               <ShoppingCartIcon className="h-5 w-5" />
-              <span className="bg-blue-600 text-white rounded-full px-2 py-0.5 text-xs">
+              <span className="bg-pink-600 text-white rounded-full px-2 py-0.5 text-xs">
                 {cart?.length || 0}
               </span>
             </NavLink>
@@ -181,7 +181,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/login"
-                className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors duration-200"
+                className="bg-pink-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-700 transition-colors duration-200"
               >
                 Login
               </NavLink>
@@ -190,7 +190,7 @@ const Navbar = () => {
             <li className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setShowDropdown(!showDropdown)}
-                className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                className="flex items-center space-x-2 text-gray-700 hover:text-pink-600 transition-colors duration-200"
               >
                 <UserIcon className="h-5 w-5" />
               </button>
@@ -243,7 +243,7 @@ const Navbar = () => {
         </ul>
 
         <button
-          className="md:hidden text-gray-700 hover:text-blue-600 transition-colors duration-200"
+          className="md:hidden text-gray-700 hover:text-pink-600 transition-colors duration-200"
           onClick={() => setShowMobileMenu(!showMobileMenu)}
         >
           {showMobileMenu ? (
@@ -286,7 +286,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/"
-                  className="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                  className="block py-2 text-gray-700 hover:text-pink-600 transition-colors duration-200"
                   onClick={() => setShowMobileMenu(false)}
                 >
                   HOME
@@ -295,7 +295,7 @@ const Navbar = () => {
               {/* <li>
                 <Link
                   to="/about"
-                  className="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                  className="block py-2 text-gray-700 hover:text-pink-600 transition-colors duration-200"
                   onClick={() => setShowMobileMenu(false)}
                 >
                   ABOUT US
@@ -304,7 +304,7 @@ const Navbar = () => {
               {/* <li>
                 <Link
                   to="/services"
-                  className="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                  className="block py-2 text-gray-700 hover:text-pink-600 transition-colors duration-200"
                   onClick={() => setShowMobileMenu(false)}
                 >
                   SERVICES
@@ -313,7 +313,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/store"
-                  className="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                  className="block py-2 text-gray-700 hover:text-pink-600 transition-colors duration-200"
                   onClick={() => setShowMobileMenu(false)}
                 >
                   STORE
@@ -324,13 +324,13 @@ const Navbar = () => {
                   to="/cartpage"
                   className={({ isActive }) =>
                     `flex items-center space-x-1 text-sm font-medium transition-colors duration-200 ${isActive
-                      ? "text-blue-600"
-                      : "text-gray-700 hover:text-blue-600"
+                      ? "text-pink-600"
+                      : "text-gray-700 hover:text-pink-600"
                     }`
                   }
                 >
                   <ShoppingCartIcon className="h-5 w-5" />
-                  <span className="bg-blue-600 text-white rounded-full px-2 py-0.5 text-xs">
+                  <span className="bg-pink-600 text-white rounded-full px-2 py-0.5 text-xs">
                     {cart?.length || 0}
                   </span>
                 </NavLink>
@@ -340,7 +340,7 @@ const Navbar = () => {
                 <li>
                   <NavLink
                     to="/login"
-                    className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors duration-200"
+                    className="bg-pink-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-700 transition-colors duration-200"
                   >
                     Login
                   </NavLink>
@@ -349,7 +349,7 @@ const Navbar = () => {
                 <li className="relative" ref={dropdownRef}>
                   <button
                     onClick={() => setShowDropdown(!showDropdown)}
-                    className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                    className="flex items-center space-x-2 text-gray-700 hover:text-pink-600 transition-colors duration-200"
                   >
                     <UserIcon className="h-5 w-5" />
                   </button>
@@ -402,7 +402,7 @@ const Navbar = () => {
             </ul>
 
             <button
-              className="md:hidden text-gray-700 hover:text-blue-600 transition-colors duration-200"
+              className="md:hidden text-gray-700 hover:text-pink-600 transition-colors duration-200"
               onClick={() => setShowMobileMenu(!showMobileMenu)}
             >
               {showMobileMenu ? (

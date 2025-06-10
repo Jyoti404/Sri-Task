@@ -19,7 +19,7 @@ const PrivacyPolicy = () => {
             <h2>Data Collection and Usage</h2>
           </div>
           <p>
-            Flytium Drone Company collects personal data, including but not
+            STYHERE Drone Company collects personal data, including but not
             limited to name, contact information, and usage data, to improve
             services, process orders, and provide customer support. We do not
             share this data with third parties without explicit consent.
@@ -32,7 +32,7 @@ const PrivacyPolicy = () => {
             <h2>Cookies and Tracking</h2>
           </div>
           <p>
-            Flytium Drone Company uses cookies and other tracking technologies
+            STYHERE Drone Company uses cookies and other tracking technologies
             to enhance user experience, track user activity on our site, and
             gather analytics data. You can manage cookie preferences through
             your browser settings.
@@ -45,7 +45,7 @@ const PrivacyPolicy = () => {
             <h2>Security and Data Protection</h2>
           </div>
           <p>
-            Flytium Drone Company takes the protection of your personal data
+            STYHERE Drone Company takes the protection of your personal data
             seriously and employs industry-standard encryption methods and
             secure storage to safeguard your information from unauthorized
             access or disclosure.

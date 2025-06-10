@@ -92,7 +92,7 @@ const AdminOrders = () => {
       case "Processing":
         return "bg-yellow-100 text-yellow-800";
       case "Shipped":
-        return "bg-blue-100 text-blue-800";
+        return "bg-pink-100 text-pink-800";
       default:
         return "bg-gray-100 text-gray-800";
     }
@@ -134,8 +134,8 @@ const AdminOrders = () => {
             <div className="bg-white rounded-xl shadow-lg p-6">
               <div className="flex justify-between items-center mb-8">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-blue-50 rounded-lg">
-                    <FaShoppingBag className="text-blue-500 text-2xl" />
+                  <div className="p-3 bg-pink-50 rounded-lg">
+                    <FaShoppingBag className="text-pink-500 text-2xl" />
                   </div>
                   <div>
                     <h1 className="text-2xl font-bold text-gray-800">
@@ -149,7 +149,7 @@ const AdminOrders = () => {
                   <input
                     type="text"
                     placeholder="Search orders..."
-                    className="pl-10 pr-4 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    className="pl-10 pr-4 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                   />
@@ -164,11 +164,11 @@ const AdminOrders = () => {
                       {...fadeIn}
                       className="bg-white border border-gray-100 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
                     >
-                      <div className="p-6 bg-gradient-to-r from-blue-50 to-transparent border-b">
+                      <div className="p-6 bg-gradient-to-r from-pink-50 to-transparent border-b">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                           <div className="flex items-center gap-3">
                             <div className="p-2 bg-white rounded-lg">
-                              <FaBoxOpen className="text-blue-500" />
+                              <FaBoxOpen className="text-pink-500" />
                             </div>
                             <div>
                               <p className="text-sm text-gray-500">Order ID</p>
@@ -267,7 +267,7 @@ const AdminOrders = () => {
                                 <h4 className="font-medium text-gray-900 truncate">
                                   {item.name}
                                 </h4>
-                                <p className="text-sm font-medium text-blue-600 mt-1">
+                                <p className="text-sm font-medium text-pink-600 mt-1">
                                   Rs. {item.price}
                                 </p>
 

@@ -186,7 +186,7 @@ const Store = () => {
       }
 
       setCart(updatedCart);
-      localStorage.setItem("Flytium", JSON.stringify(updatedCart));
+      localStorage.setItem("STYHERE", JSON.stringify(updatedCart));
     } catch (error) {
       console.error("Error adding to cart:", error);
       toast.error("Failed to add to cart");
@@ -213,7 +213,7 @@ const Store = () => {
       <button
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:bg-gray-300"
+        className="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 disabled:bg-gray-300"
       >
         Previous
       </button>
@@ -224,7 +224,7 @@ const Store = () => {
           onClick={() => handlePageChange(index + 1)}
           className={`px-4 py-2 rounded-lg ${
             currentPage === index + 1
-              ? "bg-blue-600 text-white"
+              ? "bg-pink-600 text-white"
               : "bg-gray-200 hover:bg-gray-300"
           }`}
         >
@@ -235,7 +235,7 @@ const Store = () => {
       <button
         onClick={() => handlePageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:bg-gray-300"
+        className="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 disabled:bg-gray-300"
       >
         Next
       </button>
@@ -245,7 +245,7 @@ const Store = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-blue-500"></div>
+        <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-pink-500"></div>
       </div>
     );
   }
@@ -271,7 +271,7 @@ const Store = () => {
                         <input
                           type="checkbox"
                           id={`category-${cat._id}`}
-                          className="w-4 h-4 text-blue-500 border-gray-300 rounded focus:ring-blue-500"
+                          className="w-4 h-4 text-pink-500 border-gray-300 rounded focus:ring-pink-500"
                           checked={checked.includes(cat._id)}
                           onChange={() => {
                             const updatedChecked = checked.includes(cat._id)
@@ -282,7 +282,7 @@ const Store = () => {
                         />
                         <label
                           htmlFor={`category-${cat._id}`}
-                          className="ml-3 text-sm text-gray-600 cursor-pointer hover:text-blue-500"
+                          className="ml-3 text-sm text-gray-600 cursor-pointer hover:text-pink-500"
                         >
                           {cat.name}
                         </label>
@@ -359,7 +359,7 @@ const Store = () => {
                 {/* Mobile filter button */}
                 <button
                   onClick={() => setIsModalVisible(true)}
-                  className="md:hidden flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+                  className="md:hidden flex items-center gap-2 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600"
                 >
                   <FiFilter /> Filters
                 </button>
@@ -394,7 +394,7 @@ const Store = () => {
                   >
                     <div className="relative">
                       <div className="absolute top-2 left-2 z-10">
-                        <span className="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">
+                        <span className="bg-pink-500 text-white text-xs px-2 py-1 rounded-full">
                           New
                         </span>
                       </div>
@@ -411,7 +411,7 @@ const Store = () => {
                     <div className="px-4 pt-4">
                       <button
                         onClick={() => navigate(`/product/${product.slug}`)}
-                        className="text-gray-600 hover:text-blue-500 text-sm border border-gray-300 rounded-full px-4 py-1 transition-colors"
+                        className="text-gray-600 hover:text-pink-500 text-sm border border-gray-300 rounded-full px-4 py-1 transition-colors"
                       >
                         Quick Look
                       </button>
@@ -503,7 +503,7 @@ const Store = () => {
           </button>,
           <button
             key="apply"
-            className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+            className="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600"
             onClick={() => setIsModalVisible(false)}
           >
             Apply

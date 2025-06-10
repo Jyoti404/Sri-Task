@@ -25,16 +25,16 @@ const About = () => {
           <div className="flex-1 space-y-8 text-center md:text-left">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
               Revolutionizing
-              <span className="text-blue-600"> Drone Technology</span>
+              <span className="text-pink-600"> Drone Technology</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-              Welcome to Flytium Drone Private Limited, where innovation meets
+              Welcome to STYHERE Drone Private Limited, where innovation meets
               excellence in drone technology and electronics distribution.
             </p>
           </div>
 
           <div className="relative group w-full md:w-1/2">
-            <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-pink-600 to-pink-400 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="/ad.png"
@@ -51,7 +51,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
             <div className="relative group w-full md:w-1/3">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-pink-600 to-pink-400 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto">
                 <img
                   src="./ankit sir.png"
@@ -62,12 +62,12 @@ const About = () => {
             </div>
 
             <div className="flex-1 space-y-6 text-center md:text-left">
-              <BiSolidQuoteLeft className="text-6xl text-blue-600" />
+              <BiSolidQuoteLeft className="text-6xl text-pink-600" />
               <h2 className="text-4xl font-bold text-gray-900">
                 Meet Our Founder
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
-                I am Ankit Kumar Mishra, founder of Flytium Drone Private
+                I am Ankit Kumar Mishra, founder of STYHERE Drone Private
                 Limited and a Ph.D. scholar at MMMUT, Gorakhpur. My passion lies
                 in advancing drone technology and its applications in modern
                 industry.
@@ -75,7 +75,7 @@ const About = () => {
               <div className="flex gap-4 justify-center md:justify-start">
                 <a
                   href="#"
-                  className="text-blue-600 hover:text-blue-700 transition-colors"
+                  className="text-pink-600 hover:text-pink-700 transition-colors"
                 >
                   <FaLinkedin className="text-3xl" />
                 </a>
@@ -100,19 +100,19 @@ const About = () => {
           <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
             {[
               {
-                icon: <FaRocket className="text-5xl text-blue-600" />,
+                icon: <FaRocket className="text-5xl text-pink-600" />,
                 title: "Mission",
                 description:
                   "To revolutionize drone technology and electronics distribution through innovation and excellence.",
               },
               {
-                icon: <FaEye className="text-5xl text-blue-600" />,
+                icon: <FaEye className="text-5xl text-pink-600" />,
                 title: "Vision",
                 description:
                   "To become a leading force in drone innovation and electronics distribution worldwide.",
               },
               {
-                icon: <FaStar className="text-5xl text-blue-600" />,
+                icon: <FaStar className="text-5xl text-pink-600" />,
                 title: "Values",
                 description:
                   "Excellence in innovation, unwavering commitment to quality, and customer satisfaction.",
@@ -165,7 +165,7 @@ const About = () => {
                 whileHover={{ scale: 1.05 }}
                 className="bg-gray-50 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl font-bold text-blue-600 mb-4">
+                <div className="text-5xl font-bold text-pink-600 mb-4">
                   {stat.number}
                 </div>
                 <div className="text-2xl font-semibold text-gray-900 mb-4">
@@ -179,7 +179,7 @@ const About = () => {
       </motion.div>
 
       {/* Call to Action Section */}
-      <motion.div variants={fadeIn} className="py-24 border border-blue-300">
+      <motion.div variants={fadeIn} className="py-24 border border-pink-300">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white space-y-8">
             <h2 className="text-4xl font-bold">Ready to Take Flight?</h2>
@@ -189,7 +189,7 @@ const About = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-pink-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Contact Us Today
             </motion.button>

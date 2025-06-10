@@ -57,7 +57,7 @@ const CategoryProducts = () => {
       }
 
       setCart(updatedCart);
-      localStorage.setItem("Flytium", JSON.stringify(updatedCart));
+      localStorage.setItem("STYHERE", JSON.stringify(updatedCart));
     } catch (error) {
       console.error("Error adding to cart:", error);
       toast.error("Failed to add to cart");
@@ -69,7 +69,7 @@ const CategoryProducts = () => {
       <div className="container mx-auto px-4 py-8">
         {loading ? (
           <div className="flex justify-center items-center min-h-[60vh]">
-            <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-blue-500"></div>
+            <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-pink-500"></div>
           </div>
         ) : (
           <>
@@ -143,7 +143,7 @@ const CategoryProducts = () => {
                       <div className="space-y-2">
                         <button
                           onClick={() => handleAddToCart(product)}
-                          className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                          className="w-full bg-pink-600 text-white py-2 rounded-lg hover:bg-pink-700 transition-colors"
                         >
                           Add to Cart
                         </button>

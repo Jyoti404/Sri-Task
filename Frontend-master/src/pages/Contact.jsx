@@ -50,7 +50,7 @@ const Contact = () => {
                     value={formData[field]}
                     onChange={handleChange}
                     required
-                    className="w-full p-3 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-700 bg-gray-50"
+                    className="w-full p-3 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:outline-none text-gray-700 bg-gray-50"
                   />
                 ) : (
                   <textarea
@@ -60,13 +60,13 @@ const Contact = () => {
                     value={formData[field]}
                     onChange={handleChange}
                     required
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-700 bg-gray-50"
+                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:outline-none text-gray-700 bg-gray-50"
                   ></textarea>
                 )}
               </div>
             </div>
           ))}
-          <button type="submit" className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-lg hover:shadow-lg transition-transform transform hover:scale-105 font-semibold">Submit</button>
+          <button type="submit" className="w-full bg-gradient-to-r from-pink-600 to-indigo-600 text-white py-3 rounded-lg hover:shadow-lg transition-transform transform hover:scale-105 font-semibold">Submit</button>
         </form>
       </div>
 
@@ -74,16 +74,16 @@ const Contact = () => {
       <div className="mt-12 p-8 bg-gray-900 text-white rounded-xl shadow-xl w-full max-w-4xl text-center">
         <h4 className="text-2xl font-bold mb-4">Why Choose Us?</h4>
         <ul className="text-lg space-y-3">
-          <li><strong className="text-blue-400">Vast Selection:</strong> Explore high-quality IoT products.</li>
-          <li><strong className="text-blue-400">Competitive Prices:</strong> Get the best deals available.</li>
-          <li><strong className="text-blue-400">Expert Support:</strong> Our team is here to assist you.</li>
-          <li><strong className="text-blue-400">Fast Shipping:</strong> Quick and reliable delivery.</li>
+          <li><strong className="text-pink-400">Vast Selection:</strong> Explore high-quality IoT products.</li>
+          <li><strong className="text-pink-400">Competitive Prices:</strong> Get the best deals available.</li>
+          <li><strong className="text-pink-400">Expert Support:</strong> Our team is here to assist you.</li>
+          <li><strong className="text-pink-400">Fast Shipping:</strong> Quick and reliable delivery.</li>
         </ul>
         <h5 className="mt-6 text-lg">Connect with us:</h5>
         <div className="flex justify-center gap-6 mt-4">
           <FaInstagram className="text-3xl cursor-pointer hover:text-pink-500 transition-transform transform hover:scale-110" />
-          <FaTwitter className="text-3xl cursor-pointer hover:text-blue-400 transition-transform transform hover:scale-110" />
-          <FaFacebook className="text-3xl cursor-pointer hover:text-blue-600 transition-transform transform hover:scale-110" />
+          <FaTwitter className="text-3xl cursor-pointer hover:text-pink-400 transition-transform transform hover:scale-110" />
+          <FaFacebook className="text-3xl cursor-pointer hover:text-pink-600 transition-transform transform hover:scale-110" />
         </div>
       </div>
     </div>

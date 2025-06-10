@@ -19,10 +19,10 @@ const Layout = ({ children, title, description, keywords, author }) => {
 };
 
 Layout.defaultProps = {
-  title: "Welcome to Flytium",
+  title: "Welcome to STYHERE",
   description: "We sell the best products for cheap",
   keywords: "electronics, buy electronics, cheap electronics",
-  author: "Flytium",
+  author: "STYHERE",
 };
 
 export default Layout;

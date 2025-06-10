@@ -26,7 +26,7 @@ const ServiceCard = ({ icon: Icon, title, description }) => (
     className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
   >
     <div className="flex flex-col items-center text-center space-y-4">
-      <div className="p-4 bg-blue-50 rounded-xl text-blue-600">
+      <div className="p-4 bg-pink-50 rounded-xl text-pink-600">
         <Icon size={32} strokeWidth={1.5} />
       </div>
       <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
@@ -48,13 +48,13 @@ const TrainingCard = ({
     className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full"
   >
     <div className="flex items-start gap-4 mb-6">
-      <div className="p-3 bg-blue-50 rounded-xl text-blue-600">
+      <div className="p-3 bg-pink-50 rounded-xl text-pink-600">
         <Icon size={24} strokeWidth={1.5} />
       </div>
       <div>
         <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
         <div className="flex gap-4 text-sm">
-          <span className="px-3 py-1 bg-blue-50 text-blue-600 rounded-full">
+          <span className="px-3 py-1 bg-pink-50 text-pink-600 rounded-full">
             {duration}
           </span>
           <span className="px-3 py-1 bg-green-50 text-green-600 rounded-full">
@@ -73,13 +73,13 @@ const TrainingCard = ({
       <ul className="space-y-2 mb-6">
         {topics.map((topic, index) => (
           <li key={index} className="flex items-start gap-2 text-gray-600">
-            <ArrowRight className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+            <ArrowRight className="w-5 h-5 text-pink-600 shrink-0 mt-0.5" />
             <span>{topic}</span>
           </li>
         ))}
       </ul>
 
-      <button className="w-full py-3 px-6 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors font-medium">
+      <button className="w-full py-3 px-6 bg-pink-600 text-white rounded-xl hover:bg-pink-700 transition-colors font-medium">
         Enroll Now
       </button>
     </div>
@@ -149,7 +149,7 @@ const Service = () => {
       description:
         "Deep dive into IoT networking protocols and wireless communications with practical implementations.",
       topics: [
-        "WiFi and Bluetooth protocols",
+        "WiFi and pinktooth protocols",
         "LoRaWAN and cellular IoT",
         "Network security basics",
         "Troubleshooting connectivity",
@@ -180,7 +180,7 @@ const Service = () => {
       {/* Hero Section */}
       <motion.div
         variants={fadeIn}
-        className="relative bg-blue-200 text-white py-24 overflow-hidden"
+        className="relative bg-pink-200 text-white py-24 overflow-hidden"
       >
         <div className="absolute inset-0 bg-[url('/circuit-pattern.png')] opacity-10"></div>
         <div className="container mx-auto px-4 relative">
@@ -240,7 +240,7 @@ const Service = () => {
       {/* CTA Section */}
       <motion.section variants={fadeIn} className="py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-blue-200 rounded-3xl p-12 text-center text-white">
+          <div className="max-w-4xl mx-auto bg-pink-200 rounded-3xl p-12 text-center text-white">
             <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
             <p className="text-xl opacity-90 mb-8">
               Join our community of innovators and tech enthusiasts
@@ -248,7 +248,7 @@ const Service = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-blue-600 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-pink-600 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Contact Us Today
             </motion.button>

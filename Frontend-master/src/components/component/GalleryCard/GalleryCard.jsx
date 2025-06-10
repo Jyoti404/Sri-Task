@@ -124,7 +124,7 @@ const GalleryCard = () => {
                     className={`w-2.5 h-2.5 rounded-full transition-colors ${
                       index === currentIndex
                         ? "bg-pink-600 w-6"
-                        : "bg-pink-300 hover:bg-blue-700"
+                        : "bg-pink-300 hover:bg-pink-700"
                     }`}
                   />
                 ))}

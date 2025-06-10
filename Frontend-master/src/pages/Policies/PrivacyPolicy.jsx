@@ -5,7 +5,7 @@ import { Shield, Lock, Eye, FileText } from "lucide-react";
 
 const PrivacyPolicy = () => {
   return (
-    <Layout title="Privacy Policy - Flytium">
+    <Layout title="Privacy Policy - STYHERE">
       <div className="bg-gradient-to-b from-gray-50 to-white py-12 sm:py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
@@ -33,7 +33,7 @@ const PrivacyPolicy = () => {
               <div className="space-y-8">
                 <section>
                   <div className="flex items-center gap-3 mb-4">
-                    <Shield className="w-6 h-6 text-blue-600" />
+                    <Shield className="w-6 h-6 text-pink-600" />
                     <h2 className="text-2xl font-semibold text-gray-900">
                       Information We Collect
                     </h2>
@@ -53,7 +53,7 @@ const PrivacyPolicy = () => {
 
                 <section>
                   <div className="flex items-center gap-3 mb-4">
-                    <Lock className="w-6 h-6 text-blue-600" />
+                    <Lock className="w-6 h-6 text-pink-600" />
                     <h2 className="text-2xl font-semibold text-gray-900">
                       How We Use Your Information
                     </h2>
@@ -74,7 +74,7 @@ const PrivacyPolicy = () => {
 
                 <section>
                   <div className="flex items-center gap-3 mb-4">
-                    <Eye className="w-6 h-6 text-blue-600" />
+                    <Eye className="w-6 h-6 text-pink-600" />
                     <h2 className="text-2xl font-semibold text-gray-900">
                       Information Sharing
                     </h2>
@@ -93,7 +93,7 @@ const PrivacyPolicy = () => {
 
                 <section>
                   <div className="flex items-center gap-3 mb-4">
-                    <FileText className="w-6 h-6 text-blue-600" />
+                    <FileText className="w-6 h-6 text-pink-600" />
                     <h2 className="text-2xl font-semibold text-gray-900">
                       Your Rights
                     </h2>
@@ -110,7 +110,7 @@ const PrivacyPolicy = () => {
               </div>
 
               {/* Contact Section */}
-              <div className="mt-12 p-6 bg-blue-50 rounded-xl">
+              <div className="mt-12 p-6 bg-pink-50 rounded-xl">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   Contact Us
                 </h2>
@@ -119,7 +119,7 @@ const PrivacyPolicy = () => {
                   contact us at:
                 </p>
                 <div className="mt-4">
-                  <p className="text-gray-600">Email: privacy@flytium.com</p>
+                  <p className="text-gray-600">Email: privacy@STYHERE.com</p>
                   <p className="text-gray-600">Phone: +91 6307193440</p>
                 </div>
               </div>

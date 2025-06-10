@@ -137,7 +137,7 @@ const AdminDashboard = () => {
                 title="Total Users" 
                 value={stats.totalUsers}
                 icon={FaUsers}
-                color="bg-blue-500"
+                color="bg-pink-500"
               />
               <StatCard 
                 title="Total Products" 

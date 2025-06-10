@@ -19,12 +19,12 @@ const Printing = () => {
 
   const rightCards = [
     { id: 3, name: "Microcontroller Boards", image: "./Image/droneimg.jpg", url: "https://your-link-3.com", rating: 5.0, description: "Latest microcontroller boards for your DIY projects", price: 79.99 },
-    { id: 4, name: "Batteries", image: "./Image/droneimg.jpg", url: "https://your-link-4.com", rating: 4.3, description: "Long-lasting batteries for electronics and drones", price: 29.99 },
+    { id: 4, name: "Batteries", image: "./Image/droneimg.jpg", url: "https://your-link-4.com", rating: 4.3, description: "Long-lasting batteries for electronics and ", price: 29.99 },
   ];
 
   const leftCardsSecondRow = [
     { id: 5, name: "Drone parts", image: "./Image/droneimg.jpg", url: "https://your-link-5.com", rating: 4.7, description: "Durable drone parts for custom builds", price: 59.99 },
-    { id: 6, name: "Customized Drone", image: "./Image/droneimg.jpg", url: "https://your-link-6.com", rating: 5.0, description: "Fully customized drones tailored to your needs", price: 999.99 },
+    { id: 6, name: "Customized Drone", image: "./Image/droneimg.jpg", url: "https://your-link-6.com", rating: 5.0, description: "Fully customized  tailored to your needs", price: 999.99 },
   ];
 
   const rightCardsSecondRow = [

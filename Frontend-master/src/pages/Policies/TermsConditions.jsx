@@ -5,7 +5,7 @@ import { Scale, FileCheck, AlertCircle, HelpCircle } from "lucide-react";
 
 const TermsConditions = () => {
   return (
-    <Layout title="Terms & Conditions - Flytium">
+    <Layout title="Terms & Conditions - STYHERE">
       <div className="bg-gradient-to-b from-gray-50 to-white py-12 sm:py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
@@ -33,13 +33,13 @@ const TermsConditions = () => {
               <div className="space-y-8">
                 <section>
                   <div className="flex items-center gap-3 mb-4">
-                    <Scale className="w-6 h-6 text-blue-600" />
+                    <Scale className="w-6 h-6 text-pink-600" />
                     <h2 className="text-2xl font-semibold text-gray-900">
                       Agreement to Terms
                     </h2>
                   </div>
                   <p className="text-gray-600">
-                    By accessing or using Flytium's services, you agree to be
+                    By accessing or using STYHERE's services, you agree to be
                     bound by these Terms and Conditions. If you disagree with
                     any part of the terms, you may not access our services.
                   </p>
@@ -47,7 +47,7 @@ const TermsConditions = () => {
 
                 <section>
                   <div className="flex items-center gap-3 mb-4">
-                    <FileCheck className="w-6 h-6 text-blue-600" />
+                    <FileCheck className="w-6 h-6 text-pink-600" />
                     <h2 className="text-2xl font-semibold text-gray-900">
                       Use License
                     </h2>
@@ -70,7 +70,7 @@ const TermsConditions = () => {
 
                 <section>
                   <div className="flex items-center gap-3 mb-4">
-                    <AlertCircle className="w-6 h-6 text-blue-600" />
+                    <AlertCircle className="w-6 h-6 text-pink-600" />
                     <h2 className="text-2xl font-semibold text-gray-900">
                       Disclaimer
                     </h2>
@@ -86,7 +86,7 @@ const TermsConditions = () => {
 
                 <section>
                   <div className="flex items-center gap-3 mb-4">
-                    <HelpCircle className="w-6 h-6 text-blue-600" />
+                    <HelpCircle className="w-6 h-6 text-pink-600" />
                     <h2 className="text-2xl font-semibold text-gray-900">
                       Governing Law
                     </h2>
@@ -101,7 +101,7 @@ const TermsConditions = () => {
               </div>
 
               {/* Contact Section */}
-              <div className="mt-12 p-6 bg-blue-50 rounded-xl">
+              <div className="mt-12 p-6 bg-pink-50 rounded-xl">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   Questions or Concerns?
                 </h2>
@@ -110,7 +110,7 @@ const TermsConditions = () => {
                   Conditions:
                 </p>
                 <div className="mt-4">
-                  <p className="text-gray-600">Email: legal@flytium.com</p>
+                  <p className="text-gray-600">Email: legal@STYHERE.com</p>
                   <p className="text-gray-600">Phone: +91 6307193440</p>
                 </div>
               </div>

@@ -179,7 +179,7 @@ const Users = () => {
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-6">
                 <div className="flex items-center gap-3">
-                  <FaUserCircle className="text-blue-500 text-3xl" />
+                  <FaUserCircle className="text-pink-500 text-3xl" />
                   <h1 className="text-2xl font-bold text-gray-800">
                     Users Management
                   </h1>
@@ -189,7 +189,7 @@ const Users = () => {
                   <input
                     type="text"
                     placeholder="Search users..."
-                    className="w-full md:w-64 pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full md:w-64 pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                   />
@@ -201,7 +201,7 @@ const Users = () => {
                   <StatCard
                     title="Total Users"
                     value={stats.total}
-                    bgColor="bg-gradient-to-r from-blue-500 to-blue-600"
+                    bgColor="bg-gradient-to-r from-pink-500 to-pink-600"
                   />
                   <StatCard
                     title="Customers"
@@ -223,7 +223,7 @@ const Users = () => {
 
               {loading ? (
                 <div className="text-center py-12">
-                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto"></div>
+                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500 mx-auto"></div>
                   <p className="mt-4 text-gray-600">Loading users...</p>
                 </div>
               ) : (

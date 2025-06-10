@@ -115,7 +115,7 @@ const Cart = () => {
                         <p className="text-gray-600 mb-4 line-clamp-2">
                           {item.description}
                         </p>
-                        <p className="text-2xl font-bold text-blue-600 mb-4">
+                        <p className="text-2xl font-bold text-pink-600 mb-4">
                           ₹{item.price}
                         </p>
                       </div>
@@ -176,7 +176,7 @@ const Cart = () => {
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => navigate("/checkout")}
-                      className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                      className="w-full bg-pink-600 text-white py-3 rounded-lg hover:bg-pink-700 transition-colors font-medium"
                     >
                       Proceed to Checkout
                     </motion.button>
@@ -184,7 +184,7 @@ const Cart = () => {
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => navigate("/store")}
-                      className="w-full border-2 border-blue-600 text-blue-600 py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium"
+                      className="w-full border-2 border-pink-600 text-pink-600 py-3 rounded-lg hover:bg-pink-50 transition-colors font-medium"
                     >
                       Continue Shopping
                     </motion.button>

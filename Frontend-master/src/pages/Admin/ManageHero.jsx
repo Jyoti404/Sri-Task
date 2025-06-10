@@ -47,7 +47,7 @@ const ManageHero = () => {
       setIsUploading(true);
       const formData = new FormData();
       formData.append("file", file);
-      formData.append("upload_preset", "flytium");
+      formData.append("upload_preset", "STYHERE");
       formData.append("cloud_name", "dhkpwi9ga");
 
       const response = await fetch(
@@ -159,7 +159,7 @@ const ManageHero = () => {
                   resetForm();
                   setIsModalOpen(true);
                 }}
-                className="px-4 py-2 bg-blue-600 text-white rounded-lg flex items-center gap-2"
+                className="px-4 py-2 bg-pink-600 text-white rounded-lg flex items-center gap-2"
               >
                 <Plus className="w-5 h-5" />
                 Add New Slide
@@ -186,7 +186,7 @@ const ManageHero = () => {
                     <div className="flex gap-2">
                       <button
                         onClick={() => handleEdit(slide)}
-                        className="p-2 text-blue-600 hover:bg-blue-50 rounded-full"
+                        className="p-2 text-pink-600 hover:bg-pink-50 rounded-full"
                       >
                         <Edit2 className="w-5 h-5" />
                       </button>
@@ -322,7 +322,7 @@ const ManageHero = () => {
                   <button
                     type="submit"
                     disabled={isUploading}
-                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-blue-300"
+                    className="px-4 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 disabled:bg-pink-300"
                   >
                     {isUploading
                       ? "Uploading..."

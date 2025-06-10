@@ -38,7 +38,7 @@ const CreateCategory = () => {
       setIsUploading(true);
       const formData = new FormData();
       formData.append("file", file);
-      formData.append("upload_preset", "flytium");
+      formData.append("upload_preset", "STYHERE");
       formData.append("cloud_name", "dhkpwi9ga");
 
       const response = await fetch(
@@ -168,7 +168,7 @@ const CreateCategory = () => {
                   setUpdateId(null);
                   setIsModalOpen(true);
                 }}
-                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors duration-300"
+                className="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors duration-300"
               >
                 <FaPlus /> Add Category
               </button>
@@ -178,7 +178,7 @@ const CreateCategory = () => {
               <input
                 type="text"
                 placeholder="Search categories..."
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
@@ -218,7 +218,7 @@ const CreateCategory = () => {
                       <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                         <button
                           onClick={() => handleEditClick(cat)}
-                          className="text-blue-600 hover:text-blue-900 mx-2 transition-colors duration-200"
+                          className="text-pink-600 hover:text-pink-900 mx-2 transition-colors duration-200"
                         >
                           <FaEdit size={18} />
                         </button>
@@ -310,7 +310,7 @@ const CreateCategory = () => {
                   type="text"
                   id="categoryName"
                   name="categoryName"
-                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Enter category name"
@@ -328,7 +328,7 @@ const CreateCategory = () => {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200"
+                  className="px-4 py-2 rounded-lg bg-pink-500 text-white hover:bg-pink-600 transition-colors duration-200"
                 >
                   {updateId ? "Update Category" : "Create Category"}
                 </button>

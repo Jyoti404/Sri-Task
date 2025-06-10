@@ -31,7 +31,7 @@ const CreateAd = () => {
       setIsUploading(true);
       const uploadData = new FormData();
       uploadData.append("file", file);
-      uploadData.append("upload_preset", "flytium");
+      uploadData.append("upload_preset", "STYHERE");
       uploadData.append("cloud_name", "dhkpwi9ga");
       const response = await fetch("https://api.cloudinary.com/v1_1/dhkpwi9ga/image/upload", { method: "POST", body: uploadData });
       const data = await response.json();
@@ -89,7 +89,7 @@ const CreateAd = () => {
           <div className="lg:w-3/4 space-y-6">
             <div className="flex justify-between items-center">
               <h2 className="text-2xl font-bold text-gray-900">Ads</h2>
-              <motion.button onClick={() => setIsModalOpen(true)} className="px-4 py-2 bg-blue-600 text-white rounded-lg flex items-center gap-2 hover:bg-blue-700">
+              <motion.button onClick={() => setIsModalOpen(true)} className="px-4 py-2 bg-pink-600 text-white rounded-lg flex items-center gap-2 hover:bg-pink-700">
                 <Plus className="w-5 h-5" /> Add Ad
               </motion.button>
             </div>
@@ -104,7 +104,7 @@ const CreateAd = () => {
                       <p className="text-gray-700 text-sm">{ad.description}</p>
                       <p className="text-gray-700 text-sm">Features: {ad.features}</p>
                       <div className="flex justify-between items-center pt-2">
-                        <button onClick={() => { setFormData(ad); setIsModalOpen(true); setUpdateId(ad._id); }} className="text-gray-600 hover:text-blue-600">
+                        <button onClick={() => { setFormData(ad); setIsModalOpen(true); setUpdateId(ad._id); }} className="text-gray-600 hover:text-pink-600">
                           <Edit2 className="w-5 h-5" />
                         </button>
                         <button onClick={() => handleDeleteAd(ad._id)} className="text-gray-600 hover:text-red-600">
@@ -134,7 +134,7 @@ const CreateAd = () => {
             {imagePreview && <img src={imagePreview} alt="Preview" className="w-full h-32 object-cover mb-2 rounded" />}
             <div className="flex justify-end gap-2">
               <button onClick={() => setIsModalOpen(false)} className="px-4 py-2 bg-gray-400 text-white rounded">Cancel</button>
-              <button onClick={handleSubmit} className="px-4 py-2 bg-blue-600 text-white rounded">{updateId ? "Update" : "Save"}</button>
+              <button onClick={handleSubmit} className="px-4 py-2 bg-pink-600 text-white rounded">{updateId ? "Update" : "Save"}</button>
             </div>
           </div>
         </div>

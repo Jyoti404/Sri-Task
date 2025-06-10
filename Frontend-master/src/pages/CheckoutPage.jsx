@@ -50,13 +50,13 @@ const CheckoutPage = () => {
       item._id === productId ? { ...item, quantity: newQuantity } : item
     );
     setCart(updatedCart);
-    localStorage.setItem("Flytium", JSON.stringify(updatedCart));
+    localStorage.setItem("STYHERE", JSON.stringify(updatedCart));
   };
 
   const removeItem = (productId) => {
     const updatedCart = cart.filter((item) => item._id !== productId);
     setCart(updatedCart);
-    localStorage.setItem("Flytium", JSON.stringify(updatedCart));
+    localStorage.setItem("STYHERE", JSON.stringify(updatedCart));
   };
 
   const handlePayment = async () => {
@@ -94,7 +94,7 @@ const CheckoutPage = () => {
       key: "rzp_test_mn0PTHHGYdjsI8",
       amount: response.data.order.amount,
       currency: response.data.order.currency,
-      name: "Flytium",
+      name: "STYHERE",
       description: "Order Payment",
       image: "/logo.png",
       order_id: response.data.order.id,
@@ -118,7 +118,7 @@ const CheckoutPage = () => {
 
           if (verifyResponse.data.success) {
             setCart([]);
-            localStorage.removeItem("Flytium");
+            localStorage.removeItem("STYHERE");
             alert("Payment Successful");
             navigate("/dashboard/user/orders");
           } else {
@@ -167,7 +167,7 @@ const CheckoutPage = () => {
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="mt-2 text-blue-500 hover:text-blue-700"
+                  className="mt-2 text-pink-500 hover:text-pink-700"
                   onClick={() => navigate("/dashboard/user/profile")}
                 >
                   Update Address
@@ -177,7 +177,7 @@ const CheckoutPage = () => {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-blue-500 text-white px-4 py-2 rounded"
+                className="bg-pink-500 text-white px-4 py-2 rounded"
                 onClick={() => navigate("/dashboard/user/profile")}
               >
                 Add Address
@@ -192,7 +192,7 @@ const CheckoutPage = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate("/cartpage")}
-                className="flex items-center gap-2 text-blue-500 hover:text-blue-600"
+                className="flex items-center gap-2 text-pink-500 hover:text-pink-600"
               >
                 <FiEdit2 className="w-4 h-4" />
                 <span>Edit Cart</span>
@@ -222,7 +222,7 @@ const CheckoutPage = () => {
                       <p className="text-gray-600">
                         ₹{item.price.toLocaleString()} × {item.quantity || 1}
                       </p>
-                      <p className="font-semibold text-blue-600">
+                      <p className="font-semibold text-pink-600">
                         Total: ₹
                         {(item.price * (item.quantity || 1)).toLocaleString()}
                       </p>
@@ -235,7 +235,7 @@ const CheckoutPage = () => {
             <div className="border-t mt-6 pt-4">
               <div className="flex justify-between items-center text-lg font-semibold">
                 <span>Total Amount:</span>
-                <span className="text-blue-600">{totalAmount()}</span>
+                <span className="text-pink-600">{totalAmount()}</span>
               </div>
             </div>
           </div>
@@ -245,10 +245,10 @@ const CheckoutPage = () => {
             whileTap={{ scale: 0.98 }}
             disabled={loading || !auth?.user?.address || cart.length === 0}
             onClick={handlePayment}
-            className={`w-full bg-blue-500 text-white py-4 rounded-lg font-medium text-lg ${
+            className={`w-full bg-pink-500 text-white py-4 rounded-lg font-medium text-lg ${
               loading || !auth?.user?.address || cart.length === 0
                 ? "opacity-50 cursor-not-allowed"
-                : "hover:bg-blue-600"
+                : "hover:bg-pink-600"
             }`}
           >
             {loading ? "Processing..." : "Proceed to Payment"}

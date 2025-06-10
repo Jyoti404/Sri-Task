@@ -89,7 +89,7 @@ const ProductDetails = () => {
       }
 
       setCart(updatedCart);
-      localStorage.setItem("Flytium", JSON.stringify(updatedCart));
+      localStorage.setItem("STYHERE", JSON.stringify(updatedCart));
       setQuantity(1);
     } catch (error) {
       console.error("Error adding to cart:", error);
@@ -100,7 +100,7 @@ const ProductDetails = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-blue-600"></div>
+        <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-pink-600"></div>
       </div>
     );
   }
@@ -111,7 +111,7 @@ const ProductDetails = () => {
         <h2 className="text-2xl font-bold mb-4">Product Not Found</h2>
         <button
           onClick={() => navigate("/store")}
-          className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          className="px-6 py-3 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition-colors flex items-center gap-2"
         >
           <FiArrowLeft /> Back to Store
         </button>
@@ -125,7 +125,7 @@ const ProductDetails = () => {
       <div className="max-w-7xl mx-auto px-4 py-4">
         <button
           onClick={() => navigate("/store")}
-          className="text-gray-600 hover:text-blue-600 flex items-center gap-2 transition-colors"
+          className="text-gray-600 hover:text-pink-600 flex items-center gap-2 transition-colors"
         >
           <FiArrowLeft className="w-4 h-4" />
           Back to Store
@@ -158,7 +158,7 @@ const ProductDetails = () => {
                 className="space-y-6"
               >
                 {/* Category Badge */}
-                <span className="inline-block bg-blue-50 text-blue-600 text-sm font-medium px-3 py-1 rounded-full">
+                <span className="inline-block bg-pink-50 text-pink-600 text-sm font-medium px-3 py-1 rounded-full">
                   {product.category.name}
                 </span>
 
@@ -218,7 +218,7 @@ const ProductDetails = () => {
                     <span className="text-gray-600 font-medium">
                       Total Price
                     </span>
-                    <span className="text-2xl font-bold text-blue-600">
+                    <span className="text-2xl font-bold text-pink-600">
                       ₹{(product.price * quantity).toLocaleString()}
                     </span>
                   </div>
@@ -230,7 +230,7 @@ const ProductDetails = () => {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={handleAddToCart}
-                    className="flex-1 bg-blue-600 text-white py-4 rounded-xl hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 font-medium"
+                    className="flex-1 bg-pink-600 text-white py-4 rounded-xl hover:bg-pink-700 transition-colors flex items-center justify-center gap-2 font-medium"
                   >
                     <FiShoppingCart className="w-5 h-5" />
                     Add {quantity} to Cart

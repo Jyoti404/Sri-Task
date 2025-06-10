@@ -63,7 +63,7 @@ const ShippingPolicy = () => {
           </div>
           <p>
             For damaged or delayed shipments, contact{" "}
-            <b>support@flytiumdrones.com</b> for assistance.
+            <b>support@STYHERE.com</b> for assistance.
           </p>
         </div>
       </div>

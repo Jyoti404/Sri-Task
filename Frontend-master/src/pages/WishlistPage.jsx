@@ -88,7 +88,7 @@ const WishlistPage = () => {
                     <p className="text-gray-600 mb-4 line-clamp-2">
                       {item.description}
                     </p>
-                    <p className="text-2xl font-bold text-blue-600 mb-4">
+                    <p className="text-2xl font-bold text-pink-600 mb-4">
                       ₹{item.price}
                     </p>
                   </div>

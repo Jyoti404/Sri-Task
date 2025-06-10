@@ -224,7 +224,7 @@ const CreateProduct = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => setIsModalOpen(true)}
-                className="px-4 py-2 bg-blue-600 text-white rounded-lg flex items-center gap-2 hover:bg-blue-700 transition-colors"
+                className="px-4 py-2 bg-pink-600 text-white rounded-lg flex items-center gap-2 hover:bg-pink-700 transition-colors"
               >
                 <Plus className="w-5 h-5" />
                 Add Product
@@ -239,7 +239,7 @@ const CreateProduct = () => {
                 placeholder="Search products..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
               />
             </div>
 
@@ -262,11 +262,11 @@ const CreateProduct = () => {
                     <h3 className="font-semibold text-gray-900">
                       {product.name}
                     </h3>
-                    <p className="text-blue-600 font-bold">₹{product.price}</p>
+                    <p className="text-pink-600 font-bold">₹{product.price}</p>
                     <div className="flex justify-between items-center pt-2">
                       <button
                         onClick={() => handleEditProduct(product)}
-                        className="text-gray-600 hover:text-blue-600 transition-colors"
+                        className="text-gray-600 hover:text-pink-600 transition-colors"
                       >
                         <Edit2 className="w-5 h-5" />
                       </button>
@@ -313,7 +313,7 @@ const CreateProduct = () => {
                   <input
                     type="text"
                     name="name"
-                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                     value={formData.name}
                     onChange={handleInputChange}
                     placeholder="Enter product name"
@@ -329,7 +329,7 @@ const CreateProduct = () => {
                     <input
                       type="number"
                       name="price"
-                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                       value={formData.price}
                       onChange={handleInputChange}
                       placeholder="Enter regular price"
@@ -346,7 +346,7 @@ const CreateProduct = () => {
                     <input
                       type="number"
                       name="discountedPrice"
-                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                       value={formData.discountedPrice}
                       onChange={handleInputChange}
                       placeholder="Enter discounted price"
@@ -362,7 +362,7 @@ const CreateProduct = () => {
                   </label>
                   <textarea
                     name="description"
-                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                     value={formData.description}
                     onChange={handleInputChange}
                     placeholder="Enter product description"
@@ -421,7 +421,7 @@ const CreateProduct = () => {
                   </label>
                   <select
                     name="category"
-                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                     value={formData.category}
                     onChange={handleInputChange}
                     required
@@ -446,7 +446,7 @@ const CreateProduct = () => {
                   </button>
                   <button
                     type="submit"
-                    className="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-200 disabled:bg-blue-300 flex items-center gap-2"
+                    className="px-4 py-2 rounded-lg bg-pink-600 text-white hover:bg-pink-700 transition-colors duration-200 disabled:bg-pink-300 flex items-center gap-2"
                     disabled={isUploading}
                   >
                     {isUploading ? (

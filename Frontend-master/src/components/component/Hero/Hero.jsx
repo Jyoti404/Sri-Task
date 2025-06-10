@@ -64,7 +64,7 @@ const Hero = ({ handleOrderPopup }) => {
     pauseOnHover: false,
     pauseOnFocus: true,
     customPaging: () => (
-      <div className="w-3 h-3 bg-gray-300 rounded-full mt-8 hover:bg-blue-600 transition-colors"></div>
+      <div className="w-3 h-3 bg-gray-300 rounded-full mt-8 hover:bg-pink-600 transition-colors"></div>
     ),
   };
 
@@ -121,7 +121,7 @@ const Hero = ({ handleOrderPopup }) => {
                   transition={{ duration: 0.5 }}
                   className="relative"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-3xl blur-3xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-pink-600/20 to-purple-600/20 rounded-3xl blur-3xl"></div>
                   <img
                     src={data.image}
                     alt={data.title}

@@ -52,7 +52,7 @@ const Products = () => {
                     <p className="text-gray-700 text-sm mb-2">
                       {prod.description}
                     </p>
-                    <p className="text-blue-600 font-bold">${prod.price}</p>
+                    <p className="text-pink-600 font-bold">${prod.price}</p>
                   </div>
                 </div>
               </NavLink>
