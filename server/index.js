@@ -18,7 +18,7 @@ connectDB();
 const app = express();
 
 const corsOptions = {
-  origin: 'http://localhost:5173', // Frontend URL
+  origin: 'https://sri-task.vercel.app', // Frontend URL
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type, Authorization'],
 };
