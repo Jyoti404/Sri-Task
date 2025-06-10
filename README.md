@@ -135,17 +135,15 @@ If you like this project, don't forget to ⭐ the repo!
 
 ## Screenshots
 
-### Homepage
-![Homepage screenshot](./screenshots/homepage.jpg)
+![screenshot1](./screenshots/a.jpg)
 
-### Login Screen
-![Login screen screenshot](./screenshots/login-screen.jpg)
+![screenshot2](./screenshots/b.jpg)
 
-### Dashboard
-![Dashboard screenshot](./screenshots/dashboard.jpg)
+![screenshot3](./screenshots/c.jpg)
 
-### User Profile
-![User profile screenshot](./screenshots/user-profile.jpg)
+![screenshot4](./screenshots/d.jpg)
 
-### Settings
-![Settings screenshot](./screenshots/settings.jpg)
+![screenshot5](./screenshots/e.jpg)
+
+![screenshot6](./screenshots/f.jpg)
+
