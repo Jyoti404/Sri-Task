@@ -132,3 +132,20 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ### 👩‍💻 Developed by [Your Name]
 
 If you like this project, don't forget to ⭐ the repo!
+
+## Screenshots
+
+### Homepage
+![Homepage screenshot](./screenshots/homepage.jpg)
+
+### Login Screen
+![Login screen screenshot](./screenshots/login-screen.jpg)
+
+### Dashboard
+![Dashboard screenshot](./screenshots/dashboard.jpg)
+
+### User Profile
+![User profile screenshot](./screenshots/user-profile.jpg)
+
+### Settings
+![Settings screenshot](./screenshots/settings.jpg)
