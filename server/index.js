@@ -9,6 +9,7 @@ import productRoutes from './routes/productRoutes.js';
 import orderRoutes from './routes/orderRoutes.js'; // Import admin order routes
 import heroRoutes from './routes/heroRoutes.js';
 import adRoutes from './routes/adRoutes.js'; 
+
 // Load environment variables
 dotenv.config();
 
@@ -18,7 +19,7 @@ connectDB();
 const app = express();
 
 const corsOptions = {
-  origin: 'http://localhost:5173', // Frontend URL
+  origin: `${process.env.FRONTEND_URL}`, // Frontend URL
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type, Authorization'],
 };
