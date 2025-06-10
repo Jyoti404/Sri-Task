@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import "./App.css";
 import Pagenotfound from "./pages/Pagenotfound";
 import CartPage from "./pages/CartPage";
+import WishlistPage from "./pages/WishlistPage";
 import Footer from "./components/Layout/Foot/Foot";
 import CheckoutPage from "./pages/CheckoutPage";
 import Orders from "./pages/user/Orders";
@@ -53,6 +54,7 @@ function App() {
           <Route path="/services" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cartpage" element={<CartPage />} />
+          <Route path="/wishlistpage" element={<WishlistPage/>} />
           <Route path="/dashboard" element={<Private />}>
             <Route path="user/orders" element={<Orders />} />
             <Route path="user/profile" element={<Profile />} />
