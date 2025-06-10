@@ -88,6 +88,32 @@ npm run dev
 The frontend should now be running at `http://localhost:5173`  
 The backend API should be running at `http://localhost:5000`
 
+## 📝 API Endpoints
+
+POST /api/auth/register – Register new user
+
+POST /api/auth/login – Login existing user
+
+POST /api/auth/forgot-password – Change password (requires login)
+
+GET /api/auth/user-auth – Check if user is authenticated
+
+GET /api/auth/admin-auth – Check if admin is authenticated
+
+PUT /api/auth/update-profile – Update user profile (requires login)
+
+GET /api/auth/getorders – Get current user's orders
+
+GET /api/auth/all-orders – Get all orders (admin only)
+
+PUT /api/auth/order-status/:orderId – Update order status (admin only)
+
+GET /api/auth/users – Get all users (admin only)
+
+GET /api/auth/user-stats – Get user statistics (admin only)
+
+GET /api/auth/dashboard-stats – Get dashboard analytics (admin only)
+
 ## 🌐 Deployment
 
 Both the frontend and backend are deployed using **Vercel**.  
