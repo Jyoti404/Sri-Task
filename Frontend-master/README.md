@@ -1,16 +1,121 @@
-# React + Vite
+A complete e-commerce solution for a Fashion company with product management, user authentication, payment processing, and more.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Tech Stack
 
-Currently, two official plugins are available:
+### Frontend
+- React.js with Vite
+- React Router for navigation
+- React Icons for UI elements
+- CSS for styling
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-  apiKey: "AIzaSyBw4ft3TMgCN9Jeez8oH52RmJ_9aVbOR7E",
-  authDomain: "STYHEREdrone.firebaseapp.com",
-  projectId: "STYHEREdrone",
-  storageBucket: "STYHEREdrone.appspot.com",
-  messagingSenderId: "707648745393",
-  appId: "1:707648745393:web:6195ba432f1a52a0b71790",
-  measurementId: "G-W4WFG3WVNS"
-};
+### Backend
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- JWT for authentication
+- Razorpay for payment processing
+- bcryptjs for password hashing
+
+## 📁 Project Structure
+
+```
+Sri-Task/
+├── Frontend-master/       # React frontend application
+│   ├── src/
+│   │   ├── components/    # Reusable UI components
+│   │   ├── pages/         # Page components
+│   │   ├── services/      # API services
+│   │   └── ...
+└── server/                # Express backend application
+    ├── config/            # Database and other configurations
+    ├── controllers/       # Request handlers
+    ├── models/            # Mongoose models
+    ├── routes/            # API routes
+    └── ...
+```
+
+## ⚙️ Installation
+
+### Prerequisites
+- Node.js (v14+)
+- MongoDB
+- npm or yarn
+
+### Setting Up the Backend
+```bash
+# Navigate to server directory
+cd server
+
+# Install dependencies
+npm install
+
+# Create .env file with the following variables
+# PORT=5000
+# MONGO_URI=your_mongodb_connection_string
+# JWT_SECRET=your_jwt_secret
+# RAZORPAY_KEY_ID=your_razorpay_key
+# RAZORPAY_KEY_SECRET=your_razorpay_secret
+
+# Start the server
+npm start
+```
+
+### Setting Up the Frontend
+```bash
+# Navigate to frontend directory
+cd Frontend-master
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+## 🔑 Key Features
+
+- User authentication and authorization
+- Product browsing and categorization
+- Shopping cart functionality
+- Secure payment processing with Razorpay
+- Admin dashboard for product and order management
+- Responsive design for all devices
+
+## 📝 API Endpoints
+
+### Authentication
+- `POST /api/auth/register` - Register new user
+- `POST /api/auth/login` - Login user
+
+### Products
+- `GET /api/product` - Get all products
+- `GET /api/product/:id` - Get product by ID
+- `POST /api/product` - Create new product (admin)
+
+### Categories
+- `GET /api/category` - Get all categories
+- `POST /api/category` - Create new category (admin)
+
+### Orders
+- `POST /api/payment` - Process payment and create order
+- `GET /api/payment/:userId` - Get user orders
+
+## 🔒 Environment Variables
+
+Create a `.env` file in the server directory with the following variables:
+
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+RAZORPAY_KEY_ID=your_razorpay_key
+RAZORPAY_KEY_SECRET=your_razorpay_secret
+```
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📄 License
+
+This project is licensed under the MIT License.
