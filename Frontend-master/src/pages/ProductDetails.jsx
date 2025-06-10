@@ -6,6 +6,8 @@ import toast from "react-hot-toast";
 import { useCart } from "../Context/cart";
 import { motion } from "framer-motion";
 import { FiMinus, FiPlus, FiShoppingCart, FiArrowLeft } from "react-icons/fi";
+import { useWishlist } from "../Context/wishlist";
+import { FiHeart } from "react-icons/fi";
 
 const ProductDetails = () => {
   const [product, setProduct] = useState(null);
@@ -14,6 +16,8 @@ const ProductDetails = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const { cart, setCart } = useCart();
+  const { addToWishlist, wishlist } = useWishlist();
+
 
   useEffect(() => {
     getProduct();
@@ -240,6 +244,16 @@ const ProductDetails = () => {
                   >
                     View Cart
                   </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    onClick={() => addToWishlist(product)}
+                    className="flex-1 border border-pink-500 text-pink-600 py-4 rounded-xl hover:bg-pink-50 transition-colors flex items-center justify-center gap-2 font-medium"
+                  >
+                    <FiHeart className="w-5 h-5" />
+                    Add to Wishlist
+                  </motion.button>
+
                 </div>
 
                 {/* Additional Info */}
