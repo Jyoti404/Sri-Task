@@ -137,9 +137,9 @@ If you like this project, don't forget to ⭐ the repo!
 
 ![screenshot1](./screenshots/a.jpg)
 
-![screenshot2](./screenshots/b.jpg)
-
 ![screenshot3](./screenshots/c.jpg)
+
+![screenshot2](./screenshots/b.jpg)
 
 ![screenshot4](./screenshots/d.jpg)
 
