@@ -16,7 +16,7 @@ const About = () => {
       animate="animate"
       className="min-h-screen bg-gradient-to-b from-gray-50 to-white"
     >
-      {/* Hero Section with Improved Layout */}
+      {/* Hero Section */}
       <motion.div
         variants={fadeIn}
         className="container mx-auto px-4 py-24 md:py-32"
@@ -24,12 +24,11 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-16 max-w-6xl mx-auto">
           <div className="flex-1 space-y-8 text-center md:text-left">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-              Revolutionizing
-              <span className="text-pink-600"> Drone Technology</span>
+              Redefining
+              <span className="text-pink-600"> Everyday Fashion</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-              Welcome to STYHERE Drone Private Limited, where innovation meets
-              excellence in drone technology and electronics distribution.
+              Welcome to <strong>STYHERE</strong> — your go-to destination for modern, stylish, and inclusive fashion. Where confidence meets comfort.
             </p>
           </div>
 
@@ -37,8 +36,8 @@ const About = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-pink-600 to-pink-400 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/ad.png"
-                alt="Drone Technology"
+                src="/fashion-banner.png"
+                alt="Fashion Banner"
                 className="w-full h-[400px] object-cover transform transition duration-500 group-hover:scale-105"
               />
             </div>
@@ -46,7 +45,7 @@ const About = () => {
         </div>
       </motion.div>
 
-      {/* Founder Section with Modern Design */}
+      {/* Founder Section */}
       <motion.div variants={fadeIn} className="bg-white py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
@@ -54,7 +53,7 @@ const About = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-pink-600 to-pink-400 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto">
                 <img
-                  src="./ankit sir.png"
+                  src="./founder.jpg"
                   alt="Founder"
                   className="w-full h-full object-cover transform transition duration-500 group-hover:scale-110"
                 />
@@ -67,10 +66,7 @@ const About = () => {
                 Meet Our Founder
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
-                I am Ankit Kumar Mishra, founder of STYHERE Drone Private
-                Limited and a Ph.D. scholar at MMMUT, Gorakhpur. My passion lies
-                in advancing drone technology and its applications in modern
-                industry.
+                I'm XYZ, the creative mind behind STYHERE. Fashion, for me, is about telling your story — confidently, colorfully, and comfortably.
               </p>
               <div className="flex gap-4 justify-center md:justify-start">
                 <a
@@ -91,11 +87,11 @@ const About = () => {
         </div>
       </motion.div>
 
-      {/* Values Section with Enhanced Cards */}
+      {/* Values Section */}
       <motion.div variants={fadeIn} className="bg-gray-50 py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16">
-            Our Core Values
+            Our Core Beliefs
           </h2>
           <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
             {[
@@ -103,19 +99,19 @@ const About = () => {
                 icon: <FaRocket className="text-5xl text-pink-600" />,
                 title: "Mission",
                 description:
-                  "To revolutionize drone technology and electronics distribution through innovation and excellence.",
+                  "To empower individuality by providing affordable fashion that feels good and looks even better.",
               },
               {
                 icon: <FaEye className="text-5xl text-pink-600" />,
                 title: "Vision",
                 description:
-                  "To become a leading force in drone innovation and electronics distribution worldwide.",
+                  "To be the leading fashion brand known for style, sustainability, and inclusivity.",
               },
               {
                 icon: <FaStar className="text-5xl text-pink-600" />,
                 title: "Values",
                 description:
-                  "Excellence in innovation, unwavering commitment to quality, and customer satisfaction.",
+                  "Bold creativity, everyday elegance, and a deep respect for diverse identities and bodies.",
               },
             ].map((item, index) => (
               <motion.div
@@ -138,26 +134,26 @@ const About = () => {
         </div>
       </motion.div>
 
-      {/* Stats Section with Modern Design */}
+      {/* Stats Section */}
       <motion.div variants={fadeIn} className="bg-white py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
             {[
               {
-                number: "500+",
+                number: "10K+",
                 label: "Products Sold",
                 description:
-                  "Successfully delivered high-quality drone products",
+                  "Delivering top-tier fashion items to thousands of happy customers.",
               },
               {
-                number: "30+",
-                label: "Countries Served",
-                description: "Global reach across different continents",
+                number: "25+",
+                label: "Countries Shipped",
+                description: "Our style knows no borders — worldwide delivery.",
               },
               {
-                number: "50K+",
+                number: "100K+",
                 label: "Happy Customers",
-                description: "Building a community of loyal tech enthusiasts",
+                description: "Join our growing tribe of style-savvy shoppers.",
               },
             ].map((stat, index) => (
               <motion.div
@@ -178,20 +174,20 @@ const About = () => {
         </div>
       </motion.div>
 
-      {/* Call to Action Section */}
+      {/* Call to Action */}
       <motion.div variants={fadeIn} className="py-24 border border-pink-300">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center text-white space-y-8">
-            <h2 className="text-4xl font-bold">Ready to Take Flight?</h2>
+          <div className="max-w-4xl mx-auto text-center text-gray-900 space-y-8">
+            <h2 className="text-4xl font-bold">Style Starts Here</h2>
             <p className="text-xl opacity-90">
-              Join us in shaping the future of drone technology
+              Be bold. Be you. Discover fashion that speaks your language.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-pink-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-pink-700 transition-colors"
             >
-              Contact Us Today
+              Shop Now
             </motion.button>
           </div>
         </div>
