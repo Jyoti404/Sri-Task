@@ -22,60 +22,58 @@ const TermsConditions = () => {
         <div className="policy-item" style={{ animationDelay: "0.2s" }}>
           <div className="policy-item-header">
             <CheckCircle size={28} color="#004080" />
-            <h2>Training & Demonstration</h2>
+            <h2>Size & Fit Guidance</h2>
           </div>
           <p>
-            We provide a <b>1-day training</b> or live demonstration for all
-            supplied components to ensure proper understanding of their
-            functionality.
+            We provide detailed <b>size charts and fit recommendations</b> on
+            all product pages to help customers make informed purchases.
           </p>
         </div>
 
         <div className="policy-item" style={{ animationDelay: "0.4s" }}>
           <div className="policy-item-header">
             <AlertTriangle size={28} color="#FF5733" />
-            <h2>Product Issues & Returns</h2>
+            <h2>Returns & Exchanges</h2>
           </div>
           <p>
-            Customers must report any{" "}
-            <b>damaged or incorrect products within 10 days</b> of receiving the
-            order. Claims made after this period will not be entertained.
+            You can return or exchange unworn and unwashed items within{" "}
+            <b>10 days of delivery</b>. Items must have original tags and
+            packaging intact.
           </p>
         </div>
 
         <div className="policy-item" style={{ animationDelay: "0.6s" }}>
           <div className="policy-item-header">
             <ClipboardList size={28} color="#004080" />
-            <h2>Warranty Support</h2>
+            <h2>Quality Assurance</h2>
           </div>
           <p>
-            If a product is defective and approved under warranty, a{" "}
-            <b>replacement unit</b> will be shipped. If out of stock, a{" "}
-            <b>partial refund</b> will be processed.
+            If you receive a <b>defective or wrong item</b>, please contact our
+            support team within <b>48 hours</b> for a quick resolution.
           </p>
         </div>
 
         <div className="policy-item" style={{ animationDelay: "0.8s" }}>
           <div className="policy-item-header">
             <Package size={28} color="#004080" />
-            <h2>Order Details</h2>
+            <h2>Shipping & Delivery</h2>
           </div>
           <p>
-            Customers must ensure <b>accurate shipping details</b> when placing
-            an order. <b>No modifications</b> can be made once the order is
-            processed.
+            We offer <b>free shipping</b> across India. Orders are typically
+            delivered within <b>5-7 business days</b>. Tracking details will be
+            provided once your order ships.
           </p>
         </div>
 
         <div className="policy-item" style={{ animationDelay: "1s" }}>
           <div className="policy-item-header">
             <CheckCircle size={28} color="#004080" />
-            <h2>Shipping Policy</h2>
+            <h2>Order Accuracy</h2>
           </div>
           <p>
-            We offer <b>free shipping</b> on all orders with{" "}
-            <b>no extra charges</b>. Tracking details will be shared upon
-            shipment.
+            Please double-check your <b>shipping address and contact info</b>{" "}
+            before confirming your order. <b>Changes are not allowed</b> once
+            the order is placed.
           </p>
         </div>
       </div>

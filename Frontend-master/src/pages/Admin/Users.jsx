@@ -161,11 +161,11 @@ const Users = () => {
     getUserStats();
   }, [auth?.token]);
 
-  const filteredUsers = users.filter(
-    (user) =>
-      user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      user.email.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+ const filteredUsers = users.filter(
+  (user) =>
+    (user.name?.toLowerCase()?.includes(searchTerm.toLowerCase()) ||
+     user.email?.toLowerCase()?.includes(searchTerm.toLowerCase()))
+);
 
   return (
     <Layout title={"Users Management"} description={"Manage Users"}>

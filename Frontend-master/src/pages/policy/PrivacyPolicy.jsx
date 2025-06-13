@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUserShield, FaCookieBite, FaLock } from "react-icons/fa"; // Importing React Icons
+import { FaUserShield, FaCookieBite, FaLock } from "react-icons/fa";
 import "./PolicyCommon.css";
 
 const PrivacyPolicy = () => {
@@ -19,10 +19,10 @@ const PrivacyPolicy = () => {
             <h2>Data Collection and Usage</h2>
           </div>
           <p>
-            STYHERE Drone Company collects personal data, including but not
-            limited to name, contact information, and usage data, to improve
-            services, process orders, and provide customer support. We do not
-            share this data with third parties without explicit consent.
+            STYHERE collects personal information such as your name, email,
+            shipping address, and browsing behavior to <b>process orders</b>,{" "}
+            <b>enhance your shopping experience</b>, and offer <b>personalized recommendations</b>.
+            We do not sell or share your data with third parties without your consent.
           </p>
         </div>
 
@@ -32,10 +32,9 @@ const PrivacyPolicy = () => {
             <h2>Cookies and Tracking</h2>
           </div>
           <p>
-            STYHERE Drone Company uses cookies and other tracking technologies
-            to enhance user experience, track user activity on our site, and
-            gather analytics data. You can manage cookie preferences through
-            your browser settings.
+            Our website uses cookies to remember your preferences, track
+            browsing activity, and collect analytics to improve our fashion catalog
+            and user interface. You can control cookie settings via your browser.
           </p>
         </div>
 
@@ -45,15 +44,13 @@ const PrivacyPolicy = () => {
             <h2>Security and Data Protection</h2>
           </div>
           <p>
-            STYHERE Drone Company takes the protection of your personal data
-            seriously and employs industry-standard encryption methods and
-            secure storage to safeguard your information from unauthorized
-            access or disclosure.
+            We implement secure encryption protocols and maintain strict
+            access controls to ensure your <b>personal and payment data</b> remain
+            protected while shopping with STYHERE.
           </p>
         </div>
       </div>
     </div>
   );
 };
-
 export default PrivacyPolicy;

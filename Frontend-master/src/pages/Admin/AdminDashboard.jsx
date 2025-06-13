@@ -87,7 +87,7 @@ const AdminDashboard = () => {
   };
 
   const categoryData = {
-    labels: ['Electronics', 'Clothing', 'Books', 'Food', 'Others'],
+    labels: ['Tshirt', 'Ethnic', 'Winter', 'Summer', 'Others'],
     datasets: [
       {
         label: 'Sales by Category',
@@ -153,7 +153,7 @@ const AdminDashboard = () => {
               />
               <StatCard 
                 title="Total Revenue" 
-                value={`$${stats.totalRevenue}`}
+                value={`${stats.totalRevenue}`}
                 icon={FaMoneyBillWave}
                 color="bg-orange-500"
               />
