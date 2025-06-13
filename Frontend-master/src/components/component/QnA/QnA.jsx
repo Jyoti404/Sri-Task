@@ -53,7 +53,7 @@ const FAQSection = () => {
                 to assist you with product selection, orders, returns, and more.
               </p>
               <motion.a
-                href="https://wa.me/916307193440"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
