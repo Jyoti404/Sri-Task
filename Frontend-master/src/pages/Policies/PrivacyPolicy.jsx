@@ -39,15 +39,14 @@ const PrivacyPolicy = () => {
                     </h2>
                   </div>
                   <p className="text-gray-600">
-                    We collect information that you provide directly to us,
-                    including:
+                    At STYHERE, we collect personal information to deliver the best shopping experience. This may include:
                   </p>
                   <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                    <li>Name and contact information</li>
-                    <li>Billing and shipping addresses</li>
-                    <li>Payment information</li>
-                    <li>Order history and preferences</li>
-                    <li>Device and usage information</li>
+                    <li>Your name and contact details</li>
+                    <li>Shipping and billing addresses</li>
+                    <li>Payment details (securely processed)</li>
+                    <li>Your orders, wishlist, and browsing preferences</li>
+                    <li>Device and interaction data</li>
                   </ul>
                 </section>
 
@@ -59,16 +58,14 @@ const PrivacyPolicy = () => {
                     </h2>
                   </div>
                   <p className="text-gray-600">
-                    We use the information we collect to:
+                    We use your information to:
                   </p>
                   <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                    <li>Process your orders and payments</li>
-                    <li>Communicate with you about your orders</li>
-                    <li>
-                      Send you marketing communications (with your consent)
-                    </li>
-                    <li>Improve our products and services</li>
-                    <li>Detect and prevent fraud</li>
+                    <li>Fulfill your orders and process payments</li>
+                    <li>Provide shipping and delivery updates</li>
+                    <li>Send exclusive fashion offers and updates (only with consent)</li>
+                    <li>Improve our products, collections, and website</li>
+                    <li>Protect our platform against fraud or misuse</li>
                   </ul>
                 </section>
 
@@ -80,14 +77,13 @@ const PrivacyPolicy = () => {
                     </h2>
                   </div>
                   <p className="text-gray-600">
-                    We do not sell your personal information. We may share your
-                    information with:
+                    Your privacy is our priority. We do not sell your information. We may share it with:
                   </p>
                   <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                    <li>Service providers who assist our operations</li>
-                    <li>Payment processors for secure transactions</li>
-                    <li>Shipping partners for order delivery</li>
-                    <li>Law enforcement when required by law</li>
+                    <li>Logistics partners to deliver your orders</li>
+                    <li>Payment gateways for secure transactions</li>
+                    <li>Marketing platforms (only if opted in)</li>
+                    <li>Authorities if required under law</li>
                   </ul>
                 </section>
 
@@ -98,13 +94,13 @@ const PrivacyPolicy = () => {
                       Your Rights
                     </h2>
                   </div>
-                  <p className="text-gray-600">You have the right to:</p>
+                  <p className="text-gray-600">You can always:</p>
                   <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                    <li>Access your personal information</li>
-                    <li>Correct inaccurate information</li>
-                    <li>Request deletion of your information</li>
-                    <li>Opt-out of marketing communications</li>
-                    <li>Lodge a complaint with supervisory authorities</li>
+                    <li>View or update your personal information</li>
+                    <li>Request removal of your data</li>
+                    <li>Unsubscribe from promotional emails</li>
+                    <li>Ask us how your data is being used</li>
+                    <li>File a complaint with a data protection authority</li>
                   </ul>
                 </section>
               </div>
@@ -115,11 +111,10 @@ const PrivacyPolicy = () => {
                   Contact Us
                 </h2>
                 <p className="text-gray-600">
-                  If you have any questions about our Privacy Policy, please
-                  contact us at:
+                  If you have any questions regarding our privacy practices, reach out to us:
                 </p>
                 <div className="mt-4">
-                  <p className="text-gray-600">Email: privacy@STYHERE.com</p>
+                  <p className="text-gray-600">Email: care@styhere.com</p>
                   <p className="text-gray-600">Phone: +91 6307193440</p>
                 </div>
               </div>

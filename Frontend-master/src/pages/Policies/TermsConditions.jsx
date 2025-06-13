@@ -39,9 +39,10 @@ const TermsConditions = () => {
                     </h2>
                   </div>
                   <p className="text-gray-600">
-                    By accessing or using STYHERE's services, you agree to be
-                    bound by these Terms and Conditions. If you disagree with
-                    any part of the terms, you may not access our services.
+                    By using the STYHERE platform, including browsing our
+                    collections or making a purchase, you agree to comply with
+                    and be bound by these Terms & Conditions. If you disagree
+                    with any part of these terms, please discontinue use.
                   </p>
                 </section>
 
@@ -54,16 +55,17 @@ const TermsConditions = () => {
                   </div>
                   <ul className="list-disc pl-6 text-gray-600 space-y-2">
                     <li>
-                      Products purchased are for personal use only unless
-                      explicitly stated otherwise
+                      All fashion products sold are intended for personal use
+                      only unless otherwise mentioned.
                     </li>
                     <li>
-                      Resale of products without written permission is
-                      prohibited
+                      Commercial resale of our products without prior
+                      authorization is strictly prohibited.
                     </li>
                     <li>
-                      Modification or copying of website content is not
-                      permitted
+                      Website content including images, descriptions, and
+                      designs are owned by STYHERE and cannot be copied or
+                      modified.
                     </li>
                   </ul>
                 </section>
@@ -77,10 +79,17 @@ const TermsConditions = () => {
                   </div>
                   <ul className="list-disc pl-6 text-gray-600 space-y-2">
                     <li>
-                      Products are provided "as is" without any warranties
+                      All products are sold “as is.” We do not offer warranties
+                      unless explicitly stated.
                     </li>
-                    <li>We are not responsible for misuse of our products</li>
-                    <li>Technical specifications may change without notice</li>
+                    <li>
+                      STYHERE is not liable for any damage or misuse resulting
+                      from improper handling or use of garments and accessories.
+                    </li>
+                    <li>
+                      Product images are for reference. Colors and fit may vary
+                      slightly due to lighting or fabric characteristics.
+                    </li>
                   </ul>
                 </section>
 
@@ -92,10 +101,9 @@ const TermsConditions = () => {
                     </h2>
                   </div>
                   <p className="text-gray-600">
-                    These terms shall be governed by and construed in accordance
-                    with the laws of India. Any disputes shall be subject to the
-                    exclusive jurisdiction of the courts in Uttar Pradesh,
-                    India.
+                    These Terms are governed by the laws of India. Any disputes
+                    arising shall fall under the jurisdiction of courts located
+                    in Uttar Pradesh, India.
                   </p>
                 </section>
               </div>
@@ -106,11 +114,11 @@ const TermsConditions = () => {
                   Questions or Concerns?
                 </h2>
                 <p className="text-gray-600">
-                  Please contact us for any questions regarding these Terms &
-                  Conditions:
+                  For any questions related to these Terms & Conditions, feel
+                  free to get in touch:
                 </p>
                 <div className="mt-4">
-                  <p className="text-gray-600">Email: legal@STYHERE.com</p>
+                  <p className="text-gray-600">Email: legal@styhere.com</p>
                   <p className="text-gray-600">Phone: +91 6307193440</p>
                 </div>
               </div>
